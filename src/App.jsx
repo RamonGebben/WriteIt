@@ -7,11 +7,11 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.state = { data: '# Hello World' };
+        this.onInput = this.onInput.bind( this );
     }
 
     onInput(val) {
         console.log('setting state for data:', { data: val } );
-        // Why is setState not a function here?
         this.setState({ data: val });
         console.log('set state for data:', val );
     }
