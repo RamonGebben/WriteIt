@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.Editor {
+  max-width: 50vw;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  float: left;
+}
+.Editor,
+.Editor .ace {
+  height: 100vh !important;
+}
+.Preview {
+  width: 50vw;
+  height: 100vh;
+  padding: 20px;
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+}
+.Preview h1,
+.Preview h2,
+.Preview h3,
+.Preview h4,
+.Preview h5 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.Preview h1 {
+  font-size: 9vh;
+}
+.Preview h2 {
+  font-size: 8vh;
+}
+.Preview h3 {
+  font-size: 7vh;
+}
+.Preview h4 {
+  font-size: 6.5vh;
+}
+.Preview h5 {
+  font-size: 6.5vh;
+}
+.Preview h1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 3vh;
+  text-align: center;
+}
