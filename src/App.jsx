@@ -1,6 +1,7 @@
 import React from 'react';
 import Editor from './components/Editor'
 import Preview from './components/Preview'
+import Nav from './components/Nav'
 
 class App extends React.Component {
 
@@ -8,6 +9,9 @@ class App extends React.Component {
         super(props);
         this.state = { data: '# Hello World' };
         this.onInput = this.onInput.bind( this );
+    }
+
+    setupShortcuts(){
     }
 
     onInput(val) {
@@ -19,6 +23,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <Nav />
                 <Editor data={ this.state.data }
                         onInput={this.onInput} />
                 <Preview data={ this.state.data } />
